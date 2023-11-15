@@ -37,13 +37,18 @@ class Head: SCNReferenceNode, Content {
                     else { return }
                 leftEyeNode.scale.y = (1 - eyeBlinkLeft) * 0.1
                 rightEyeNode.scale.y = (1 - eyeBlinkRight) * 0.1
-                mouth.scale.y = originalMouthScale + jawOpen * originalMouthScale
+                mouth.scale.y = originalMouthScale + (jawOpen * originalMouthScale * 2)
                 
             }
         }
     
     func update(withFaceAnchor: ARFaceAnchor) {
         blendShapes = withFaceAnchor.blendShapes
-        print("Updating b")
+        rotateEyes(left: withFaceAnchor.leftEyeTransform.inverse, right: withFaceAnchor.rightEyeTransform.inverse)
+    }
+    
+    func rotateEyes(left: simd_float4x4, right: simd_float4x4) {
+        leftEyeNode.simdPivot = left
+        rightEyeNode.simdPivot = right
     }
 }

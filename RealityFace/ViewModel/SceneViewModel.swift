@@ -24,7 +24,7 @@ class SceneViewModel: NSObject, ARSCNViewDelegate {
     var addedNode: Content?
     
     var nodes: [AllScenes] = []
-    var contentSelected: SceneType = .mask
+    var contentSelected: SceneType = .head
     
     
 
