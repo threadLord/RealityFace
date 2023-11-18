@@ -20,6 +20,7 @@
 		AD6F1FC52B076882002E0F7C /* SceneLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F1FC42B076882002E0F7C /* SceneLoader.swift */; };
 		AD7CFAE82B04D18F00C60004 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7CFAE72B04D18F00C60004 /* Box.swift */; };
 		AD7CFAEC2B04D31100C60004 /* SceneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7CFAEB2B04D31100C60004 /* SceneViewModel.swift */; };
+		AD87AEF42B092CDB005295BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD87AEF32B092CDB005295BA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		AD6F1FC42B076882002E0F7C /* SceneLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneLoader.swift; sourceTree = "<group>"; };
 		AD7CFAE72B04D18F00C60004 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		AD7CFAEB2B04D31100C60004 /* SceneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewModel.swift; sourceTree = "<group>"; };
+		AD87AEF32B092CDB005295BA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				AD1E8C672B0411710078FA8E /* art.scnassets */,
 				AD1E8C6B2B0411720078FA8E /* Main.storyboard */,
 				AD1E8C6E2B0411750078FA8E /* Assets.xcassets */,
+				AD87AEF32B092CDB005295BA /* LaunchScreen.storyboard */,
 			);
 			path = RealityFace;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD1E8C682B0411710078FA8E /* art.scnassets in Resources */,
+				AD87AEF42B092CDB005295BA /* LaunchScreen.storyboard in Resources */,
 				AD1E8C6F2B0411750078FA8E /* Assets.xcassets in Resources */,
 				AD1E8C6D2B0411720078FA8E /* Main.storyboard in Resources */,
 			);
@@ -354,6 +358,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
@@ -383,6 +388,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
