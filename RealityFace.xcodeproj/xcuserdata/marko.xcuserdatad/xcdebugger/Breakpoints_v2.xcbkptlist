@@ -7,49 +7,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "252AF38C-9EF6-4E59-BA34-87B72C0592EE"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RealityFace/Content/Mask.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "update(withFaceAnchor:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9E85B580-5E50-447D-B710-4D07F14A1B96"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RealityFace/Content/Head.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "update(withFaceAnchor:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "998AFE3A-170B-474F-B559-2BA3DEA97A3C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RealityFace/Content/Glasses.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "update(withFaceAnchor:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "998AFE3A-170B-474F-B559-2BA3DEA97A3C - 93626bd93f24c1a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RealityFace.Glasses.update(withFaceAnchor: __C.ARFaceAnchor) -&gt; ()"
+                  moduleName = "RealityFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marko/Desktop/DSCAR/RealityFace/RealityFace/Content/Glasses.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "998AFE3A-170B-474F-B559-2BA3DEA97A3C - 93626bd93f24c267"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RealityFace.Glasses.update(withFaceAnchor: __C.ARFaceAnchor) -&gt; ()"
+                  moduleName = "RealityFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marko/Desktop/DSCAR/RealityFace/RealityFace/Content/Glasses.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E95540E-E929-471B-81F2-0F794D4E3D20"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RealityFace/Content/Glasses.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "update(withFaceAnchor:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init(geometry:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7E95540E-E929-471B-81F2-0F794D4E3D20 - 1889c9651a03eef6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RealityFace.Glasses.init(geometry: __C.ARSCNFaceGeometry) -&gt; RealityFace.Glasses"
+                  moduleName = "RealityFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marko/Desktop/DSCAR/RealityFace/RealityFace/Content/Glasses.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "664">
+               </Location>
+               <Location
+                  uuid = "7E95540E-E929-471B-81F2-0F794D4E3D20 - 1889c9651a03eef6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RealityFace.Glasses.init(geometry: __C.ARSCNFaceGeometry) -&gt; RealityFace.Glasses"
+                  moduleName = "RealityFace"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marko/Desktop/DSCAR/RealityFace/RealityFace/Content/Glasses.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "836">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

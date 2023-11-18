@@ -25,10 +25,11 @@ class ViewController: UIViewController {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        let scene = SCNScene()
         
         
         // Set the scene to the view
-//        sceneView.scene = viewModel.scene
+        sceneView.scene = scene
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,8 +40,6 @@ class ViewController: UIViewController {
 
         // Run the view's session
         sceneView.session.run(configuration)
-        
-  
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -49,17 +48,4 @@ class ViewController: UIViewController {
         // Pause the view's session
         sceneView.session.pause()
     }
-
-    // MARK: - ARSCNViewDelegate
-    
-/*
-     Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
-     
-        return node
-    }
-*/
-    
-
 }

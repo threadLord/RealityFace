@@ -10,13 +10,17 @@ import ARKit
 
 class Mask: SCNNode, Content {
     init(geometry: ARSCNFaceGeometry) {
-        let material = geometry.firstMaterial!
-        
-        material.diffuse.contents = UIColor.red
-        material.lightingModel = .physicallyBased
-        
         super.init()
         self.geometry = geometry
+        
+        let material = geometry.firstMaterial!
+        
+        material.lightingModel = .physicallyBased
+        material.diffuse.contents = UIColor.red
+        material.roughness.contents = UIColor.black
+        
+        geometry.firstMaterial?.diffuse.contents = UIColor(hue: 0.0, saturation: 1.0, brightness: 1.0, alpha: 1.0)
+        geometry.firstMaterial?.roughness.contents = UIColor.black
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -26,5 +30,16 @@ class Mask: SCNNode, Content {
     func update(withFaceAnchor anchor: ARFaceAnchor) {
         let faceGeometry = geometry as! ARSCNFaceGeometry
         faceGeometry.update(from: anchor.geometry)
+    }
+}
+
+
+extension UIColor {
+    func imageWithColor(width: Int, height: Int) -> UIImage {
+        let size = CGSize(width: width, height: height)
+        return UIGraphicsImageRenderer(size: size).image { rendererContext in
+            self.setFill()
+            rendererContext.fill(CGRect(origin: .zero, size: size))
+        }
     }
 }

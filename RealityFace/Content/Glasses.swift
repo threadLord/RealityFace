@@ -8,22 +8,11 @@
 import Foundation
 import ARKit
 
-
-
-
 class Glasses: SCNNode, Content {
     
     let occlusionNode: SCNNode
     
-    /// - Tag: OcclusionMaterial
     init(geometry: ARSCNFaceGeometry) {
-
-        /*
-         Write depth but not color and render before other objects.
-         This causes the geometry to occlude other SceneKit content
-         while showing the camera view beneath, creating the illusion
-         that real-world objects are obscuring virtual 3D objects.
-         */
         geometry.firstMaterial!.colorBufferWriteMask = []
         occlusionNode = SCNNode(geometry: geometry)
         occlusionNode.renderingOrder = -1
@@ -32,18 +21,22 @@ class Glasses: SCNNode, Content {
 
         addChildNode(occlusionNode)
         
-        // Add 3D content positioned as "glasses".
-//        let faceOverlayContent = loadedContentForAsset(named: "overlayModel")
-        let faceOverlayContent = SCNNode()
+        guard let faceOverlayContent = SceneLoader.loadUsdz(name: "oculos") else {
+            return
+        }
+        
+        faceOverlayContent.load()
+        faceOverlayContent.simdScale = simd_float3(x: 0.1, y: 0.1, z: 0.1)
+        faceOverlayContent.position.y += 0.025
+        faceOverlayContent.position.z += 0.01
+        
         addChildNode(faceOverlayContent)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("\(#function) has not been implemented")
     }
-    
-    // MARK: VirtualFaceContent
-    
+        
     func update(withFaceAnchor anchor: ARFaceAnchor) {
         let faceGeometry = occlusionNode.geometry as! ARSCNFaceGeometry
         faceGeometry.update(from: anchor.geometry)
