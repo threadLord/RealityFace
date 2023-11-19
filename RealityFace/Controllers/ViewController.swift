@@ -10,8 +10,10 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController {
-
+   
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var menuView: MenuView!
+    
     
     var viewModel: SceneViewModel = SceneViewModel()
     
@@ -29,6 +31,8 @@ class ViewController: UIViewController {
         
         // Set the scene to the view
         sceneView.scene = scene
+        
+        menuView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,5 +67,15 @@ class ViewController: UIViewController {
 //                                        ,
 //                                          ARSCNDebugOptions.showBoundingBoxes
         ]
+    }
+}
+
+extension ViewController: MenuViewDelegate {
+    func selected(type: SceneType) {
+        guard let device = sceneView.device else { return }
+        
+        if let customSceneDevice = ARSCNFaceGeometry(device: device) {
+            viewModel.swapFilter(type: type, geometry: customSceneDevice)
+        }
     }
 }

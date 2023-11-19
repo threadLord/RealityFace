@@ -25,6 +25,8 @@
 		AD7E1B812B0934870084D13A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7E1B7F2B0934870084D13A /* MenuCell.swift */; };
 		AD7E1B822B0934870084D13A /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD7E1B802B0934870084D13A /* MenuCell.xib */; };
 		AD87AEF42B092CDB005295BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD87AEF32B092CDB005295BA /* LaunchScreen.storyboard */; };
+		ADA2DAEF2B09513D00DCBB6E /* MenuViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA2DAEE2B09513D00DCBB6E /* MenuViewViewModel.swift */; };
+		ADA2DAF22B0955C200DCBB6E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA2DAF12B0955C200DCBB6E /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		AD7E1B7F2B0934870084D13A /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		AD7E1B802B0934870084D13A /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		AD87AEF32B092CDB005295BA /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADA2DAEE2B09513D00DCBB6E /* MenuViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewViewModel.swift; sourceTree = "<group>"; };
+		ADA2DAF12B0955C200DCBB6E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		AD1E8C642B0411710078FA8E /* RealityFace */ = {
 			isa = PBXGroup;
 			children = (
+				ADA2DAF02B0955B100DCBB6E /* Extensions */,
 				AD7E1B7E2B0934600084D13A /* Cells */,
 				AD7E1B792B092EB20084D13A /* Views */,
 				AD6BEFB82B08D5A800BAF4EE /* Enums */,
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				AD7CFAEB2B04D31100C60004 /* SceneViewModel.swift */,
+				ADA2DAEE2B09513D00DCBB6E /* MenuViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,6 +161,14 @@
 				AD7E1B802B0934870084D13A /* MenuCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		ADA2DAF02B0955B100DCBB6E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ADA2DAF12B0955C200DCBB6E /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA2DAF22B0955C200DCBB6E /* UIView+Extensions.swift in Sources */,
 				AD1E8C6A2B0411710078FA8E /* ViewController.swift in Sources */,
 				AD7CFAEC2B04D31100C60004 /* SceneViewModel.swift in Sources */,
 				AD7E1B812B0934870084D13A /* MenuCell.swift in Sources */,
@@ -239,6 +254,7 @@
 				AD1E8C7D2B0428E80078FA8E /* Glasses.swift in Sources */,
 				AD1E8C662B0411710078FA8E /* AppDelegate.swift in Sources */,
 				AD6F1FC52B076882002E0F7C /* SceneLoader.swift in Sources */,
+				ADA2DAEF2B09513D00DCBB6E /* MenuViewViewModel.swift in Sources */,
 				AD7E1B7D2B092EDF0084D13A /* MenuView.swift in Sources */,
 				AD1E8C772B0426A00078FA8E /* Mask.swift in Sources */,
 				AD6BEFBA2B08D5B800BAF4EE /* SceneType.swift in Sources */,

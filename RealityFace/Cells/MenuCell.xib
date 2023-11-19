@@ -8,19 +8,24 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="MenuCell" customModule="RealityFace" customModuleProvider="target">
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="MenuCell" id="gTV-IL-0wX" customClass="MenuCell" customModule="RealityFace" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Nk-kIS">
-                        <rect key="frame" x="-95" y="-39" width="240" height="128"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Nk-kIS">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                     </imageView>
                 </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="fUc-Nk-kIS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AcJ-We-o7B"/>
+                <constraint firstAttribute="trailing" secondItem="fUc-Nk-kIS" secondAttribute="trailing" id="G0z-uD-Y41"/>
+                <constraint firstItem="fUc-Nk-kIS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VGE-o7-15i"/>
+                <constraint firstAttribute="bottom" secondItem="fUc-Nk-kIS" secondAttribute="bottom" id="vh4-Aw-wXa"/>
+            </constraints>
             <connections>
                 <outlet property="imageView" destination="fUc-Nk-kIS" id="XaI-9J-lAJ"/>
             </connections>
