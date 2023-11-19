@@ -8,11 +8,12 @@
 import Foundation
 
 class MenuViewViewModel {
-    var scenes: [SceneType] = [.box, .glasses, .head]
+    var scenes: [SceneType] = [.box, .glasses, .head, .mask]
     
     var images: [SceneType: String] = [
         .box: "box",
         .head: "robotHead",
-        .glasses: "glasses"
+        .glasses: "glasses",
+        .mask: "faceMask"
     ]
 }

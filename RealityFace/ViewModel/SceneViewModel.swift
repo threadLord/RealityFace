@@ -48,7 +48,7 @@ class SceneViewModel: NSObject  {
     }
     
     private func getContent(type: SceneType, geometry: ARSCNFaceGeometry?) -> Content {
-        guard let faceGeometry = faceGeometry else {
+        guard let faceGeometry = geometry else {
             return Box()
         }
     
