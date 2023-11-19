@@ -21,7 +21,8 @@ class MenuCell: UICollectionViewCell {
     
     func set(imageNamed: String?) {
         if let imageNamed = imageNamed {
-            let image = UIImage(named: imageNamed)
+            let image = UIImage(named: imageNamed)?.withRenderingMode(.alwaysTemplate)
+            imageView.tintColor = .white
             imageView.image = image
         }
     }
