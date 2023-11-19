@@ -13,10 +13,8 @@ class SceneViewModel: NSObject  {
     var anchorNode: SCNNode?
     var addedNode: Content?
     var faceGeometry: ARSCNFaceGeometry?
-    
     var contentSelected: SceneType = .mask
     
-
     func faceAnchor(faceAnchor: ARFaceAnchor) {
         addedNode?.update(withFaceAnchor: faceAnchor)
     }
@@ -38,12 +36,17 @@ class SceneViewModel: NSObject  {
     }
     
     func swapFilter(type: SceneType, geometry: ARSCNFaceGeometry?) {
-        contentSelected = type
-        let content = getContent(type: type, geometry: geometry)
-        self.addedNode = content
-        if let anchorNode = anchorNode {
-            anchorNode.childNodes.forEach { $0.removeFromParentNode() }
-            anchorNode.addChildNode(self.addedNode!)
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else {
+                return
+            }
+            self.contentSelected = type
+            let content = self.getContent(type: type, geometry: geometry)
+            self.addedNode = content
+            if let anchorNode = anchorNode {
+                anchorNode.childNodes.forEach { $0.removeFromParentNode() }
+                anchorNode.addChildNode(self.addedNode!)
+            }
         }
     }
     

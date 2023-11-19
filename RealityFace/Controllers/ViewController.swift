@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
     @IBOutlet weak var menuView: MenuView!
     
-    
     var viewModel: SceneViewModel = SceneViewModel()
     
     var session: ARSession {
@@ -57,9 +56,9 @@ class ViewController: UIViewController {
         session.delegate = viewModel
         sceneView.showsStatistics = false
         
-        sceneView.automaticallyUpdatesLighting = true /* default setting */
-        sceneView.autoenablesDefaultLighting = false /* default setting */
-        sceneView.scene.lightingEnvironment.intensity = 1.0 /* default setting */
+        sceneView.automaticallyUpdatesLighting = true
+        sceneView.autoenablesDefaultLighting = false
+        sceneView.scene.lightingEnvironment.intensity = 1.0 
       
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints,
                                   ARSCNDebugOptions.showWorldOrigin,
