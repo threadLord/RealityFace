@@ -13,7 +13,7 @@ class SceneViewModel: NSObject  {
     var anchorNode: SCNNode?
     var addedNode: Content?
     var faceGeometry: ARSCNFaceGeometry?
-    var contentSelected: SceneType = .mask
+    var contentSelected: SceneType = .box
     
     func faceAnchor(faceAnchor: ARFaceAnchor) {
         addedNode?.update(withFaceAnchor: faceAnchor)
@@ -23,7 +23,7 @@ class SceneViewModel: NSObject  {
         DispatchQueue.main.async {
             self.anchorNode = node
             node.childNodes.forEach { $0.removeFromParentNode() }
-            self.swapFilter(type: .head, geometry: self.faceGeometry)
+            self.swapFilter(type: self.contentSelected, geometry: self.faceGeometry)
         }
     }
     
