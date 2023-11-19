@@ -17,28 +17,39 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="179"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8oc-1E-HHJ">
-                    <rect key="frame" x="24" y="25" width="345" height="128"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuBakcground" translatesAutoresizingMaskIntoConstraints="NO" id="r1G-Qb-Son">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="179"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8oc-1E-HHJ">
+                    <rect key="frame" x="0.0" y="25" width="393" height="128"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="128" id="bMd-hX-Z85"/>
                     </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wQ4-WD-h4H">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="24" id="wQ4-WD-h4H">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="sectionInset" minX="24" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="8oc-1E-HHJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="Ecc-Vb-mK3"/>
+                <constraint firstAttribute="trailing" secondItem="r1G-Qb-Son" secondAttribute="trailing" id="7oy-dQ-XmN"/>
+                <constraint firstItem="8oc-1E-HHJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ecc-Vb-mK3"/>
                 <constraint firstItem="8oc-1E-HHJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="F68-PU-Eu7"/>
-                <constraint firstAttribute="trailing" secondItem="8oc-1E-HHJ" secondAttribute="trailing" constant="24" id="hSC-VN-M0j"/>
+                <constraint firstItem="r1G-Qb-Son" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="H7j-xb-SEQ"/>
+                <constraint firstAttribute="bottom" secondItem="r1G-Qb-Son" secondAttribute="bottom" id="I8p-cW-6cG"/>
+                <constraint firstItem="r1G-Qb-Son" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f2L-na-KFr"/>
+                <constraint firstAttribute="trailing" secondItem="8oc-1E-HHJ" secondAttribute="trailing" id="hSC-VN-M0j"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-164.12213740458014" y="-217.25352112676057"/>
         </view>
     </objects>
+    <resources>
+        <image name="MenuBakcground" width="390" height="200"/>
+    </resources>
 </document>

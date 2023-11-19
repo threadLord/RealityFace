@@ -17,7 +17,6 @@ class MenuCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = .cyan
     }
     
     func set(imageNamed: String?) {

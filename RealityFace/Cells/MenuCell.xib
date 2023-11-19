@@ -15,16 +15,23 @@
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Nk-kIS">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarElipse" translatesAutoresizingMaskIntoConstraints="NO" id="BWy-YU-8Fa">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Nk-kIS">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
                     </imageView>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="fUc-Nk-kIS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AcJ-We-o7B"/>
-                <constraint firstAttribute="trailing" secondItem="fUc-Nk-kIS" secondAttribute="trailing" id="G0z-uD-Y41"/>
-                <constraint firstItem="fUc-Nk-kIS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VGE-o7-15i"/>
-                <constraint firstAttribute="bottom" secondItem="fUc-Nk-kIS" secondAttribute="bottom" id="vh4-Aw-wXa"/>
+                <constraint firstItem="fUc-Nk-kIS" firstAttribute="centerY" secondItem="BWy-YU-8Fa" secondAttribute="centerY" id="7wk-DT-dpz"/>
+                <constraint firstItem="fUc-Nk-kIS" firstAttribute="height" secondItem="BWy-YU-8Fa" secondAttribute="height" multiplier="0.8" id="HYd-Uq-Vih"/>
+                <constraint firstAttribute="trailing" secondItem="BWy-YU-8Fa" secondAttribute="trailing" id="J8x-hZ-J5F"/>
+                <constraint firstAttribute="bottom" secondItem="BWy-YU-8Fa" secondAttribute="bottom" id="QyC-ch-kdW"/>
+                <constraint firstItem="fUc-Nk-kIS" firstAttribute="width" secondItem="BWy-YU-8Fa" secondAttribute="width" multiplier="0.8" id="aKD-1D-kHU"/>
+                <constraint firstItem="BWy-YU-8Fa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="enC-Go-2Ea"/>
+                <constraint firstItem="BWy-YU-8Fa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oJU-AK-xLs"/>
+                <constraint firstItem="fUc-Nk-kIS" firstAttribute="centerX" secondItem="BWy-YU-8Fa" secondAttribute="centerX" id="w2O-RZ-usR"/>
             </constraints>
             <connections>
                 <outlet property="imageView" destination="fUc-Nk-kIS" id="XaI-9J-lAJ"/>
@@ -32,4 +39,7 @@
             <point key="canvasLocation" x="79" y="20"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="avatarElipse" width="338" height="338"/>
+    </resources>
 </document>
